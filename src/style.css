@@ -1,0 +1,18 @@
+@import '@rolemodel/optics/dist/css/optics.css';
+
+
+.sidebar.sidebar--padded {
+  padding: var(--op-space-large) var(--op-space-2x-large) var(--op-space-4x-large);
+
+  .content-header {    
+    padding-bottom: var(--op-space-2x-large);
+  }
+}
+
+.sidebar
+{
+  .sidebar__link
+  {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Go Fish Static</title>
+  </head>
+  <body class="app-with-sidebar">
+    
+    <nav class="sidebar sidebar--drawer">
+      <div class="sidebar__content sidebar__content--start">
+        <button class="btn btn--no-border btn--active">Games</button>
+        <button class="btn btn--no-border">Stats</button>
+      </div>
+      
+      <div class="sidebar__content sidebar__content--end">
+        <div class="divider"></div>
+        <a href="">Profile</a>
+        <a href="">Log Out</a>
+      </div>
+        
+    </nav>
+
+    <div class="app-body">
+      <!--
+        If your app has a top header, use
+        <div class='app__header'></div>
+      -->
+      <div class="app__content">
+
+          <div class="container">
+            <header class="content-header">
+              <div class="content-header__details">
+                <h1 class="content-header__title">Players</h1>
+              </div>
+            </header>
+            
+            <div class="card card--padded">
+              <details class="accordion">
+                <summary>
+                  <div class="flex gap-xl">
+                    <div>Player 1</div>
+                    <div>Cards: 7</div>
+                    <div>Books: 0</div>
+                  </div>
+
+                  <span class="material-symbols-outlined icon accordion__marker">arrow_right</span>
+                  
+                </summary>
+                <div>
+                  This is where you can show all the cards that a player has
+                </div>
+                
+              </details>
+            </div>
+
+            <div class="card card--padded">
+              <details class="accordion">
+                <summary>
+                  <div class="flex gap-xl">
+                    <div>Player 1</div>
+                    <div>Cards: 7</div>
+                    <div>Books: 0</div>
+                  </div>
+
+                  <span class="material-symbols-outlined icon accordion__marker">arrow_right</span>
+                  
+                </summary>
+                <div>
+                  This is where you can show all the cards that a player has
+                </div>
+                
+              </details>
+            </div>
+
+            
+
+            
+          </div>
+
+          
+          <div class="container">
+            <header class="content-header">
+              <div class="content-header__details">
+                <h1 class="content-header__title">Game Feed</h1>
+              </div>
+            </header>
+
+            <div style="background-color: var(--op-color-primary-base); height: 100%;">
+              <div>
+                Scott asks Hunter if they have any 8s
+              </div>
+
+              <div>
+                <textarea placeholder="Send a message..." class="form-control form-control--undefined"></textarea>
+              </div>
+            </div>
+          </div>
+
+
+
+
+      </div>
+      <!--
+        If your app has a bottom footer, use
+        <div class='app__footer'></div>
+      -->
+    </div>
+
+    
+    
+  </body>
+</html>
+
+<!--
+
+<div class="app-body" style="height: 40rem;">
+  <div class="app__header">
+    <div class="navbar">
+      
+      <a class="navbar__brand" href="/">
+        <img src="./public/rms-logo.svg" alt="RoleModel Software Logo">
+      </a>
+  
+      <nav class="navbar__content navbar__content--justify-end">
+        <button class="btn btn--no-border btn--active"><span class="material-symbols-outlined icon">inbox</span>Inbox</button>
+        <button class="btn btn--no-border"><span class="material-symbols-outlined icon">send</span>Outbox</button>
+        <button class="btn btn--no-border"><span class="material-symbols-outlined icon">favorite</span>Favorite</button>
+        <button class="btn btn--no-border"><span class="material-symbols-outlined icon">blur_on</span>Something</button>
+      </nav>
+      
+  <div class="navbar__content">
+    <a href="/?path=/docs/components-avatar--docs" class="avatar avatar--medium"><img src="https://picsum.photos/id/1/400/400" alt="Avatar"></a>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+-->
