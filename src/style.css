@@ -31,6 +31,30 @@
 .hand    { grid-area: cards; }
 .books  { grid-area: books; }
 
+.game-feed
+{
+  /* op size unit is 4px */
+  --op-navbar-height: calc(var(--op-size-unit)*15); /* 60 px */
+  background-color: var(--op-color-primary-plus-eight);
+  border-left: 1px solid var(--op-color-border);
+
+  .content-header
+  {
+    height: var(--op-navbar-height);
+    padding-top: var(--op-space-small);
+    padding-right: var(--op-space-medium);
+    padding-bottom: var(--op-space-2x-small, 100px);
+    padding-left: var(--op-space-medium);
+
+    border-bottom: 1px solid var(--op-color-border);
+
+    h2
+    {
+      font-size: var(--op-font-medium);
+    }
+
+  }
+}
 
 /*
 .sidebar.sidebar--padded {
