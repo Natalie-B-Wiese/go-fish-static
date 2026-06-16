@@ -9,35 +9,39 @@
   </head>
   <body class="op-page">
 
-
     <div class="op-page__sidebar">
-      <nav class="sidebar sidebar--drawer sidebar--padded">
-        <header class="content-header">
-          <div class="content-header__details">
-            <h2 class="content-header__title">Go Fish</h2>
-          </div>          
-        </header>
-      
-        <div class="sidebar__content sidebar__content--start">
-          <button class="btn btn--no-border btn--active">
-            <span class="material-symbols-outlined">playing_cards</span>
-            Games
-          </button>
+      <div class="op-stack gap-xl">
+        <nav class="primary--nav">
+          <header class="content-header">
+            <div class="content-header__details">
+              <h2 class="content-header__title">Go Fish</h2>
+            </div>          
+          </header>
+        
+          <div class="sidebar__content sidebar__content--start">
+            <div class="op-stack gap-xxs">
+              <button class="btn btn--no-border btn--active">
+                Games
+              </button>
 
-          <button class="btn btn--no-border">
-            <span class="material-symbols-outlined">leaderboard</span>
-            Stats
-          </button>
-        </div>
-
-        <div class="sidebar__content sidebar__content--end">
-          <div class="flex flex-col gap-xl">
-            <div class="divider"></div>
-            <a href="" class="sidebar__link">Profile</a>
-            <a href="" class="sidebar__link">Log Out</a>
+              <button class="btn btn--no-border">
+                Stats
+              </button>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+
+
+        <nav class="secondary--nav">
+          <div class="sidebar__content sidebar__content--end">
+            <div class="flex flex-col gap-xl">
+              <div class="divider"></div>
+              <a href="" class="sidebar__link">Profile</a>
+              <a href="" class="sidebar__link">Log Out</a>
+            </div>
+          </div>
+        </nav>
+      </div>
 
     </div>
 

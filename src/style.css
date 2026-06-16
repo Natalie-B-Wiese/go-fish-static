@@ -1,6 +1,19 @@
 @import '@rolemodel/optics/dist/css/optics.css';
 
+.op-page__sidebar {
+  padding-top: var(--op-space-2x-large);
+  padding-right: var(--op-space-large);
+  padding-bottom: var(--op-space-2x-large);
+  
+  padding-left: var(--op-space-large);
 
+  background-color: var(--neutral-plus-eight);
+  border-right: var(--op-border-width) solid var(--op-color-neutral-plus-four);
+  width: 216px;
+}
+
+
+/*
 .sidebar.sidebar--padded {
   padding: var(--op-space-large) var(--op-space-2x-large) var(--op-space-4x-large);
 
@@ -69,6 +82,19 @@
 {
   padding: 20px;
 }
+
+.player-details
+{
+  display: flex;
+  gap: var(--op-space-4x-large);
+}
+
+*/
+
+/*
+--gf-side-panel-width: calc(var(--op-size-unit) * 84) 336 pixels
+--gf-side-panel-height: calc(var(--op-size-unit) * 64) 256 pixels
+*/
 
 /* playing-card__center */
 
