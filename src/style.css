@@ -16,3 +16,79 @@
     text-decoration: none;
   }
 }
+
+.accordion
+{
+  .accordion__content
+  {
+    background-color: var(--op-color-neutral-on-minus-five);
+  }
+}
+
+#game-feed
+{
+  background-color: var(--op-color-primary-plus-five);
+  padding: 20px;
+}
+
+.playing-card
+{
+  border: 1px solid black;
+}
+
+.playing-card.playing-card--small
+{
+  height: 80px;
+  width: 60px;
+}
+
+.playing-card.playing-card--large
+{
+  height: 160px;
+  width: 120px;
+}
+
+.playing-card
+{
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: 20px 1fr 20px;
+
+  .playing-card__center
+  {
+    grid-column: span 3;
+  }
+}
+
+.playing-card>*
+{
+  border: 1px solid black;
+}
+
+
+
+/* playing-card__center */
+
+/*
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+*/
+
+/*
+<div class="playing-card__top-left-corner">
+  Atl
+</div>
+
+<div class="playing-card__top-right-corner">
+  Atr
+</div>
+
+<div class="playing-card__bottom-left-corner">
+  Abl
+</div>
+
+<div class="playing-card__bottom-right-corner">
+  Abr
+</div>
+
+*/
