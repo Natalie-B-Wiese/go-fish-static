@@ -99,6 +99,14 @@
   }
 }
 
+.game-actions
+{
+  background-color: var(--op-color-primary-plus-seven);
+  border: 1px solid var(--op-color-primary-plus-six);
+  border-radius: var(--op-radius-x-large);
+  padding: var(--op-space-small);
+}
+
 /*
 .sidebar.sidebar--padded {
   padding: var(--op-space-large) var(--op-space-2x-large) var(--op-space-4x-large);

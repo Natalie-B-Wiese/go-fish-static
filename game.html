@@ -50,8 +50,29 @@
             
           </div>
 
-          <div class="game-actions">
-            buttons
+          <div class="game-actions op-stack items-stretch gap-sm">
+            <div class="game-actions__options op-split items-stretch gap-sm">
+              <div class="form-group flex-grow-1">
+                <label class="form-label" for="player">Player</label>
+                <select class="form-control form-control--large" id="player">
+                  <option>Bily</option>
+                  <option>Joyby</option>
+                  <option>Ganger</option>
+                </select>
+              </div>
+
+              <div class="form-group flex-grow-1">
+                <label class="form-label" for="rank">Card Rank</label>
+                <select class="form-control form-control--large" id="rank">
+                  <option>Ace</option>
+                  <option>Two</option>
+                  <option>Three</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn btn--primary">Ask Bily for Twos</button>
+
           </div>
         </div>
 
