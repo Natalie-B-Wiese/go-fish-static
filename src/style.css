@@ -14,6 +14,7 @@
 
 .game-view
 {
+  background-color: var(--op-color-neutral-plus-max);
   height: 100vh;
   --gf-side-panel-width: calc(var(--op-size-unit) * 84); /* 336 pixels */
   --gf-side-panel-height: calc(var(--op-size-unit) * 64); /* 256 pixels */
