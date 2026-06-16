@@ -43,7 +43,7 @@
     height: var(--op-navbar-height);
     padding-top: var(--op-space-small);
     padding-right: var(--op-space-medium);
-    padding-bottom: var(--op-space-2x-small, 100px);
+    padding-bottom: var(--op-space-2x-small);
     padding-left: var(--op-space-medium);
 
     border-bottom: 1px solid var(--op-color-border);
@@ -53,6 +53,20 @@
       font-size: var(--op-font-medium);
     }
 
+  }
+
+  .content-body
+  {
+    padding: var(--op-space-medium);
+
+    .player-action
+    {
+      --gf-height: calc(var(--op-size-unit) * 11.5); /* 46 px */
+      height: var(--gf-height);
+      border-radius: var(--op-radius-x-large);
+      background-color: var(--op-color-primary-plus-five);
+      padding: var(--op-space-small);
+    }
   }
 }
 
