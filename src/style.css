@@ -34,25 +34,15 @@
 .game-feed
 {
   /* op size unit is 4px */
-  --op-navbar-height: calc(var(--op-size-unit)*15); /* 60 px */
   background-color: var(--op-color-primary-plus-eight);
   border-left: 1px solid var(--op-color-border);
 
   .content-header
   {
-    height: var(--op-navbar-height);
-    padding-top: var(--op-space-small);
-    padding-right: var(--op-space-medium);
-    padding-bottom: var(--op-space-2x-small);
-    padding-left: var(--op-space-medium);
-
-    border-bottom: 1px solid var(--op-color-border);
-
     h2
     {
       font-size: var(--op-font-medium);
     }
-
   }
 
   .content-body
@@ -99,12 +89,31 @@
   }
 }
 
+.game-feed .content-header, .game-board .content-header
+{
+  --op-navbar-height: calc(var(--op-size-unit)*15); /* 60 px */
+  height: var(--op-navbar-height);
+  padding-top: var(--op-space-small);
+  padding-right: var(--op-space-medium);
+  padding-bottom: var(--op-space-2x-small);
+  padding-left: var(--op-space-medium);
+
+  border-bottom: 1px solid var(--op-color-border);
+}
+
+
+
 .game-actions
 {
   background-color: var(--op-color-primary-plus-seven);
   border: 1px solid var(--op-color-primary-plus-six);
   border-radius: var(--op-radius-x-large);
   padding: var(--op-space-small);
+}
+
+.game-board
+{
+
 }
 
 /*
