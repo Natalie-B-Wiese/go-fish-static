@@ -69,6 +69,12 @@
     {
       background-color: var(--op-color-primary-plus-five);
     }
+    
+    .action-responses
+    {
+      padding-left: var(--op-space-small);
+      padding-right: var(--op-space-small);
+    }
 
     .feed-response
     {
