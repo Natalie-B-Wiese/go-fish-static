@@ -65,7 +65,10 @@
   border: 1px solid black;
 }
 
-
+.accordion.accordion--padded>*
+{
+  padding: 20px;
+}
 
 /* playing-card__center */
 
