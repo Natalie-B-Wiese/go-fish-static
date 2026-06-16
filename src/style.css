@@ -59,14 +59,35 @@
   {
     padding: var(--op-space-medium);
 
-    .player-action
+    .feed-action
     {
-      --gf-height: calc(var(--op-size-unit) * 11.5); /* 46 px */
-      height: var(--gf-height);
       border-radius: var(--op-radius-x-large);
-      background-color: var(--op-color-primary-plus-five);
       padding: var(--op-space-small);
     }
+
+    .player-action
+    {
+      background-color: var(--op-color-primary-plus-five);
+    }
+
+    .feed-response
+    {
+      height: var(--gf-height);
+      border: 1px solid black;
+    }
+
+    .feed-response--unsuccess
+    {
+      background-color: var(--op-color-alerts-warning-plus-seven);
+      border-color: var(--op-color-alerts-warning-plus-five);
+    }
+
+    .feed-response--result
+    {
+      background-color: var(--op-color-primary-plus-max);
+      border-color: var(--op-color-primary-plus-seven);
+    }
+
   }
 }
 
