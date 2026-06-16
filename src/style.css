@@ -68,6 +68,7 @@
     .player-action
     {
       background-color: var(--op-color-primary-plus-five);
+      color: var(--op-color-primary-minus-five);
     }
     
     .action-responses
@@ -86,6 +87,7 @@
     {
       background-color: var(--op-color-alerts-warning-plus-seven);
       border-color: var(--op-color-alerts-warning-plus-five);
+      color: var(--op-color-alerts-warning-minus-two);
     }
 
     .feed-response--result
