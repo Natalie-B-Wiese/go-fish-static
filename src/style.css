@@ -12,6 +12,25 @@
   width: 216px;
 }
 
+.game-board
+{
+  height: 100vh;
+  --gf-side-panel-width: calc(var(--op-size-unit) * 84); /* 336 pixels */
+  --gf-side-panel-height: calc(var(--op-size-unit) * 64); /* 256 pixels */
+
+  display: grid;
+  grid-template-rows: 1fr var(--gf-side-panel-height);
+  grid-template-columns: 1fr var(--gf-side-panel-width);
+  grid-template-areas:
+    "players game-feed"
+    "cards books";
+}
+
+.players  { grid-area: players; }
+.game-feed { grid-area: game-feed; }
+.hand    { grid-area: cards; }
+.books  { grid-area: books; }
+
 
 /*
 .sidebar.sidebar--padded {
