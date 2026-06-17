@@ -90,7 +90,7 @@
   }
 }
 
-.game-feed .content-header, .game-board .content-header
+.game-feed .content-header, .game-board .content-header, .hand .content-header, .books .content-header
 {
   --op-navbar-height: calc(var(--op-size-unit)*15); /* 60 px */
   height: var(--op-navbar-height);
@@ -102,6 +102,10 @@
   border-bottom: 1px solid var(--op-color-border);
 }
 
+.hand .content-header, .books .content-header
+{
+  border: 1px solid var(--op-color-border);
+}
 
 
 .game-actions
@@ -226,9 +230,4 @@
   gap: var(--op-space-4x-large);
 }
 
-*/
-
-/*
---gf-side-panel-width: calc(var(--op-size-unit) * 84) 336 pixels
---gf-side-panel-height: calc(var(--op-size-unit) * 64) 256 pixels
 */
