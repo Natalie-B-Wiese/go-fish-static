@@ -144,12 +144,6 @@
       gap: var(--op-space-x-large); 
     }
 
-    .accordion__content, summary
-    {
-      border-radius: var(--op-radius-medium);
-      border: var(--op-border-width) solid var(--op-color-border);
-    }
-
     .accordion__content
     {
       /* TODO: padding-inline for H and padding-block for V */
@@ -163,10 +157,19 @@
     
   }
 
-  .accordion[open]
+  .accordion
   {
-    border: var(--op-border-width) solid var(--op-color-primary-plus-four);
+    border-radius: var(--op-radius-medium);
+  }
+
+  .accordion[open]
+  { 
     background-color: var(--op-color-primary-plus-eight);
+
+    .accordion__content, summary
+    {
+      border: var(--op-border-width) solid var(--op-color-primary-plus-four);
+    }
 
     .icon
     {
@@ -176,7 +179,10 @@
   }
 
   .accordion:not([open]) {
-
+    .accordion__content, summary
+    {
+      border: var(--op-border-width) solid var(--op-color-border);
+    }
   }
 
   .text-pair
