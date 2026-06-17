@@ -118,43 +118,36 @@
   font-weight: var(--op-font-weight-semi-bold);
 }
 
-.players__hand 
+.accordion
 {
-  .accordion
+  border-radius: var(--op-radius-medium);
+
+  .accordion__header
   {
-    .accordion__label
-    {
-      font-size: var(--op-font-medium);
-      font-weight: var(--op-font-weight-normal);
-    }
-
-    summary
-    {
-      height: var(--op-input-height-large);     
-      padding-right: var(--op-space-medium);
-      padding-left: var(--op-space-2x-small);
-      gap: var(--op-space-x-large); 
-    }
-
-    .accordion__content
-    {
-      /* TODO: padding-inline for H and padding-block for V */
-      padding: var(--op-space-small) var(--op-space-medium); /* V, H*/      
-    }
-
-    .icon
-    {
-      border-radius: var(--op-radius-circle);
-    }
-    
+    font-size: var(--op-font-medium);
+    font-weight: var(--op-font-weight-normal);
   }
 
-  .accordion
+  summary
   {
-    border-radius: var(--op-radius-medium);
+    height: var(--op-input-height-large);     
+    padding-right: var(--op-space-medium);
+    padding-left: var(--op-space-2x-small);
+    gap: var(--op-space-x-large); 
   }
 
-  .accordion[open]
+  .accordion__content
+  {
+    /* TODO: padding-inline for H and padding-block for V */
+    padding: var(--op-space-small) var(--op-space-medium); /* V, H*/      
+  }
+
+  .icon
+  {
+    border-radius: var(--op-radius-circle);
+  }
+
+  &[open]
   { 
     background-color: var(--op-color-primary-plus-eight);
 
@@ -170,18 +163,22 @@
     }
   }
 
-  .accordion:not([open]) {
+  &:not([open]) {
     .accordion__content, summary
     {
       border: var(--op-border-width) solid var(--op-color-border);
     }
   }
+  
+}
 
+
+.players__hand 
+{
   .text-pair
   {
-    gap: var(--op-space-2x-large, 100px);
-  }
-  
+    gap: var(--op-space-2x-large);
+  } 
 }
 
 .cards-stacked>*:not(:first-child)
