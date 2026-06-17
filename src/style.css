@@ -30,7 +30,7 @@
     "cards books";
 }
 
-.game-board  { grid-area: game-board; }
+#game-board  { grid-area: game-board; }
 .game-feed { grid-area: game-feed; }
 .hand    { grid-area: cards; }
 .books  { grid-area: books; }
@@ -93,19 +93,6 @@
   }
 }
 
-/*
-.game-feed .content-header, .game-board .content-header, .hand .content-header, .books .content-header
-{
-  --op-navbar-height: calc(var(--op-size-unit)*15); /* 60 px /
-  height: var(--op-navbar-height);
-  padding-top: var(--op-space-small);
-  padding-right: var(--op-space-medium);
-  padding-bottom: var(--op-space-2x-small);
-  padding-left: var(--op-space-medium);
-
-  border-bottom: 1px solid var(--op-color-border);
-}
-*/
 
 .hand .content-header, .books .content-header
 {
@@ -121,7 +108,7 @@
   padding: var(--op-space-small);
 }
 
-.game-board
+#game-board
 {
   #players
   {
@@ -206,7 +193,7 @@
 
 .cards-stacked
 {
-  max-height: calc(var(--op-size-unit)*30);
+  height: calc(var(--op-size-unit)*30);
 }
 
 .playing-card {
@@ -256,20 +243,6 @@
 }
 
 
-
-/*
-
-.playing-card.playing-card--small
-{
-  height: 80px;
-  width: 60px;
-}
-
-.playing-card.playing-card--large
-{
-  height: 160px;
-}
-*/
 
 /*
 .sidebar.sidebar--padded {
