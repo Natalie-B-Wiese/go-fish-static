@@ -9,20 +9,19 @@
   </head>
   <body>
     <main class="game-view">
-      <div class="game-board">
-        <header class="content-header">
-          <div class="op-split items-center">
-            <button class="btn btn--no-border btn--icon btn--small">
-              <span class="material-symbols-outlined icon--small">arrow_back</span>
-            </button>
-            <h2 class="content-header__title">Game 1</h2>
-          </div>
+
+      <div class="game-board panel">
+        <header class="panel__header panel__header--padded gap-xs">
+          <button class="btn btn--no-border btn--icon btn--small">
+            <span class="material-symbols-outlined icon--small">arrow_back</span>
+          </button>
+          <h2>Game 1</h2>
         </header>
 
-        <div class="players op-stack gap-xs">
-          <header><h2>Players</h2></header>
+        <div class="panel__content op-stack gap-xs" id="players">
+          <h3>Players</h3>
+
           <div class="players__hand op-stack gap-xs">
-            
             <details class="accordion">
               <summary>
                 <span class="material-symbols-outlined icon accordion__marker">arrow_right</span>
@@ -74,25 +73,20 @@
                 
               </div>
             </details>
-
-
           </div>
         </div>
+
       </div>
       
 
-      <div class="game-feed op-stack">
-        <header class="content-header">
-          <div class="content-header__details">
-            <h2 class="content-header__title">Game Feed</h2>
-          </div>
-          <div class="content-header__aside">
-            <div class="badge badge--primary">Your Turn</div>
-          </div>
+      <div class="game-feed op-stack panel">
+        <header class="panel__header panel__header--padded op-split">
+          <h2>Game Feed</h2>
+          <div class="badge badge--primary">Your Turn</div>
         </header>
         
          
-        <div class="content-body op-stack flex-grow-1">
+        <div class="panel__content op-stack flex-grow-1">
           <div class="feed-content op-stack gap-xs flex-grow-1">
             <div class="feed-action player-action">
               Joby asked <strong>Natalie</strong> for any <strong>8</strong>s
@@ -147,26 +141,25 @@
 
       </div>
 
-      <div class="hand">
-        <header class="content-header">
-          <h2 class="content-header__title">Hand</h2>
+      <div class="hand panel">
+        <header class="panel__header panel__header--padded panel__header--condensed">
+          <h2>Hand</h2>
         </header>
         
          
-        <div class="content-body cards-stacked flex">
+        <div class="panel__content cards-stacked flex">
           <img src="img/2_of_clubs.png" class="playing-card playing-card--large">
           <img src="img/2_of_clubs.png" class="playing-card playing-card--large">
           <img src="img/2_of_clubs.png" class="playing-card playing-card--large">
         </div>
       </div>
 
-      <div class="books">
-        <header class="content-header">
-          <h2 class="content-header__title">Books</h2>
+      <div class="books panel">
+        <header class="panel__header panel__header--padded panel__header--condensed">
+          <h2>Books</h2>
         </header>
         
-         
-        <div class="content-body cards-stacked flex">
+        <div class="panel__content cards-stacked flex">
           <img src="img/2_of_clubs.png" class="playing-card playing-card--large">
           <img src="img/2_of_clubs.png" class="playing-card playing-card--large">
           <img src="img/2_of_clubs.png" class="playing-card playing-card--large">

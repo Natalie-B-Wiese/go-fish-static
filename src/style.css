@@ -12,9 +12,12 @@
   width: 216px;
 }
 
+/* TODO: when setting background color, also set text color!!! */
 .game-view
 {
   background-color: var(--op-color-neutral-plus-max);
+  color: var(--op-color-neutral-on-plus-max);
+
   height: 100vh;
   --gf-side-panel-width: calc(var(--op-size-unit) * 84); /* 336 pixels */
   --gf-side-panel-height: calc(var(--op-size-unit) * 64); /* 256 pixels */
@@ -90,9 +93,10 @@
   }
 }
 
+/*
 .game-feed .content-header, .game-board .content-header, .hand .content-header, .books .content-header
 {
-  --op-navbar-height: calc(var(--op-size-unit)*15); /* 60 px */
+  --op-navbar-height: calc(var(--op-size-unit)*15); /* 60 px /
   height: var(--op-navbar-height);
   padding-top: var(--op-space-small);
   padding-right: var(--op-space-medium);
@@ -101,6 +105,7 @@
 
   border-bottom: 1px solid var(--op-color-border);
 }
+*/
 
 .hand .content-header, .books .content-header
 {
@@ -118,7 +123,7 @@
 
 .game-board
 {
-  .players
+  #players
   {
     padding-top: var(--op-space-2x-large);
     padding-right: var(--op-space-3x-large);
@@ -160,9 +165,31 @@
 
     .accordion__content
     {
+      /* TODO: padding-inline for H and padding-block for V */
       padding: var(--op-space-small) var(--op-space-medium); /* V, H*/      
     }
+
+    .icon
+    {
+      border-radius: var(--op-radius-circle);
+    }
     
+  }
+
+  .accordion[open]
+  {
+    border: var(--op-border-width) solid var(--op-color-primary-plus-four);
+    background-color: var(--op-color-primary-plus-eight);
+
+    .icon
+    {
+      background-color: var(--op-color-primary-plus-five);
+      border: var(--op-border-width) solid var(--op-color-primary-plus-three);
+    }
+  }
+
+  .accordion:not([open]) {
+
   }
 
   .text-pair
@@ -177,6 +204,61 @@
   margin-left: -40px;
 }
 
+.cards-stacked
+{
+  max-height: calc(var(--op-size-unit)*30);
+}
+
+.playing-card {
+  height: 100%;
+  aspect-ratio: 63.5 / 88.9;  /* official playing care*/ 
+}
+
+
+/* start of new stuff */
+.panel
+{
+  .panel__header
+  {
+    border: var(--op-border-width) solid var(--op-color-border);
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .panel__header--padded
+  {
+    --op-navbar-height: calc(var(--op-size-unit)*15); /* 60 px */
+    height: var(--op-navbar-height);
+    
+    padding-top: var(--op-space-small);
+    padding-bottom: var(--op-space-small);
+    padding-right: var(--op-space-medium);
+    padding-left: var(--op-space-medium);
+  }
+
+  .panel__header--condensed
+  {
+    --op-navbar-height: calc(var(--op-size-unit)*10); /* 40 px */
+    height: var(--op-navbar-height);
+  }
+
+  .panel__content
+  {
+
+
+  }
+}
+
+
+
+/*
+
 .playing-card.playing-card--small
 {
   height: 80px;
@@ -187,6 +269,7 @@
 {
   height: 160px;
 }
+*/
 
 /*
 .sidebar.sidebar--padded {
