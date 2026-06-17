@@ -179,6 +179,11 @@
   width: 60px;
 }
 
+.playing-card.playing-card--large
+{
+  height: 160px;
+}
+
 /*
 .sidebar.sidebar--padded {
   padding: var(--op-space-large) var(--op-space-2x-large) var(--op-space-4x-large);
