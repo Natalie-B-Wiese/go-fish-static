@@ -58,7 +58,7 @@
   .player-action
   {
     background-color: var(--op-color-primary-plus-five);
-    color: var(--op-color-primary-minus-five);
+    color: var(--op-color-primary-on-plus-five-alt, red);
   }
   
   .action-responses
@@ -70,20 +70,19 @@
   .feed-response
   {
     height: var(--gf-height);
-    border: 1px solid black;
   }
 
   .feed-response--unsuccess
   {
     background-color: var(--op-color-alerts-warning-plus-seven);
     border-color: var(--op-color-alerts-warning-plus-five);
-    color: var(--op-color-alerts-warning-minus-two);
+    color: var(--op-color-alerts-warning-on-plus-five-alt);
   }
 
   .feed-response--result
   {
     background-color: var(--op-color-primary-plus-max);
-    border-color: var(--op-color-primary-plus-seven);
+    border-color: var(--op-color-primary-on-plus-max-alt);
   }
 }
 
