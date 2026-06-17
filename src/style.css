@@ -197,9 +197,14 @@
   margin-left: -40px;
 }
 
-.cards-stacked
+.accordion .cards-stacked, .books .cards-stacked
 {
   height: calc(var(--op-size-unit)*30); /* 120px */
+}
+
+.hand .cards-stacked
+{
+  height: calc(var(--op-size-unit)*38); /* 152 px */
 }
 
 .playing-card {
