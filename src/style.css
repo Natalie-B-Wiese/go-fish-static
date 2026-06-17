@@ -130,6 +130,39 @@
   font-weight: var(--op-font-weight-semi-bold);
 }
 
+.players__hand 
+{
+  .accordion
+  {
+    .accordion__label
+    {
+      font-size: var(--op-font-medium);
+      font-weight: var(--op-font-weight-normal);
+    }
+
+    summary
+    {
+      height: var(--op-input-height-large);     
+      padding-right: var(--op-space-medium);
+      padding-left: var(--op-space-2x-small);
+      gap: var(--op-space-x-large); 
+    }
+
+    .accordion__content, summary
+    {
+      border-radius: var(--op-radius-medium);
+      border: var(--op-border-width) solid var(--op-color-border);
+    }
+    
+  }
+
+  .text-pair
+  {
+    gap: var(--op-space-2x-large, 100px);
+  }
+  
+}
+
 /*
 .sidebar.sidebar--padded {
   padding: var(--op-space-large) var(--op-space-2x-large) var(--op-space-4x-large);
