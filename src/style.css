@@ -205,6 +205,8 @@
 .playing-card {
   height: 100%;
   aspect-ratio: 63.5 / 88.9;  /* official playing care*/ 
+  /* box-shadow: 0px 1.08px 2.17px 0px var(--op-color-neutral-plus-two); */
+  box-shadow: var(--op-shadow-x-small);
 }
 
 
