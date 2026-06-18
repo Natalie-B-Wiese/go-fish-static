@@ -55,12 +55,12 @@
 
 /* todo: game-board rename to game-view__game-board and do it with others too.
 Also don't use IDs!!! */
-#game-board  { grid-area: game-board; }
-.game-feed { grid-area: game-feed; }
-.hand    { grid-area: cards; }
-.books  { grid-area: books; }
+.game-view__game-board  { grid-area: game-board; }
+.game-view__game-feed { grid-area: game-feed; }
+.game-view__hand    { grid-area: cards; }
+.game-view__books  { grid-area: books; }
 
-.game-feed
+.game-view__game-feed
 {
   .feed-action
   {
@@ -103,7 +103,7 @@ Also don't use IDs!!! */
 }
 
 
-.hand .content-header, .books .content-header
+.game-view__hand .content-header, .game-view__books .content-header
 {
   border: 1px solid var(--op-color-border);
 }
@@ -117,7 +117,7 @@ Also don't use IDs!!! */
   padding: var(--op-space-small);
 }
 
-#game-board
+.game-view__game-board
 {
   #players
   {
@@ -211,12 +211,12 @@ Also don't use IDs!!! */
   margin-left: -40px;
 }
 
-.accordion .cards-stacked, .books .cards-stacked
+.accordion .cards-stacked, .game-view__books .cards-stacked
 {
   height: calc(var(--op-size-unit)*30); /* 120px */
 }
 
-.hand .cards-stacked
+.game-view__hand .cards-stacked
 {
   height: calc(var(--op-size-unit)*38); /* 152 px */
 }
