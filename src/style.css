@@ -52,6 +52,20 @@
   }
 }
 
+.op-page__main
+{
+  .content-header
+  {
+    .content-header__title
+    {
+      /* overrwrites default styling in optics */
+      font-size: var(--op-font-small);
+      font-weight: var(--op-font-weight-semi-bold);
+    }
+  }
+}
+
+
 .game-view
 {
   background-color: var(--op-color-neutral-plus-max);
