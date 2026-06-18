@@ -1,82 +1,5 @@
 @import '@rolemodel/optics/dist/css/optics.css';
 
-/* Theme styling */
-:root {
-  /* Colors */
-  /* hsla(284, 90%, 40%, 1) */
-  --op-color-primary-h: 284;
-  --op-color-primary-s: 90%;
-  --op-color-primary-l: 40%;
-
-  --op-color-alerts-warning-plus-seven: hsl(var(--op-color-primary-h), 90%, 19%);
-  --op-color-alerts-warning-on-plus-seven-alt: hsl(47, 100%, 60%);
-
-  --op-color-neutral-plus-eight: hsl(284, 40%, 90%);
-  --op-color-primary-on-neutral-eight-alt: hsl(287, 11%, 16%);
-
-  --op-color-secondary: hsl(282, 47%, 17%);
-  --op-color-secondary-on: hsl(287, 30%, 72%);
-
-  --gf-color-on-bubble-alert: var(--op-color-alerts-warning-on-plus-seven-alt);
-
-  --op-color-border: hsl(279, 32%, 86%);
-
-  --op-radius-small: 0px;
-  --op-radius-medium: 0px;
-  --op-radius-large: 0px;
-  --op-radius-x-large: 0px;
-  --op-radius-2x-large: 0px;
-  --op-radius-circle: 0px;
-  --op-radius-pill: 0px;
-}
-/* End of theme styling */
-
-select
-{
-  color: var(--op-color-primary-on-neutral-eight-alt) !important;
-}
-
-.op-page__sidebar {
-  padding-top: var(--op-space-2x-large);
-  padding-right: var(--op-space-large);
-  padding-bottom: var(--op-space-2x-large);
-  padding-left: var(--op-space-large);
-
-  background-color: var(--neutral-plus-eight);
-  border-right: var(--op-border-width) solid var(--op-color-neutral-plus-four);
-  width: calc(var(--op-size-unit) * 54); /* 216px */
-
-  .primary--nav
-  {
-    gap: var(--op-space-2x-large);
-  }
-
-  .btn
-  {
-    justify-content: left;
-    color: var(--op-color-neutral-on-plus-five);
-    font-size: var(--op-font-small);
-  }
-
-  .sidebar__link
-  {
-    text-decoration: none;
-    color: var(--op-color-neutral-on-plus-max);
-    font-size: var(--op-font-x-small);
-  }
-}
-
-.op-page__main
-{
-  .content-header
-  {
-    .content-header__title
-    {
-      font-size: var(--op-font-small);
-      font-weight: var(--op-font-weight-semi-bold);
-    }
-  }
-}
 
 .card
 {
@@ -84,101 +7,44 @@ select
   background-color: var(--op-color-neutral-plus-eight) !important;
 }
 
-.game-view, .op-page
+
+.feed-action
 {
-  background-color: var(--op-color-neutral-plus-max);
-  color: var(--op-color-neutral-on-plus-max);
+  border-radius: var(--op-radius-x-large);
+  padding: var(--op-space-small);
 }
 
-.game-view
+.player-action
 {
-  height: 100vh;
-  overflow: hidden;
-  --gf-side-panel-width: calc(var(--op-size-unit) * 84); /* 336 pixels */
-  --gf-side-panel-height: calc(var(--op-size-unit) * 64); /* 256 pixels */
-
-  display: grid;
-  grid-template-rows: 1fr var(--gf-side-panel-height);
-  grid-template-columns: 1fr var(--gf-side-panel-width);
-  grid-template-areas:
-    "game-board game-feed"
-    "cards books";
-
-  .game-view__game-board
-  {
-    grid-area: game-board;
-  }
-
-  .game-view__game-feed { 
-    grid-area: game-feed;
-    border-left: var(--op-border-width) solid var(--op-color-border);
-
-    .panel__content
-    {
-      padding-top: 0px !important;
-      padding-bottom: 0px !important;
-    }
-
-    .feed-content
-    {
-      padding-top: var(--op-space-medium);
-      padding-bottom: var(--op-space-medium);
-
-    }
-  }
-
-  .game-view__hand {
-    grid-area: cards; 
-  }
-
-  .game-view__books {
-    grid-area: books;
-    border-left: var(--op-border-width) solid var(--op-color-border);
-  }
+  background-color: var(--op-color-primary-plus-five);
+  color: var(--op-color-primary-on-plus-five-alt);
+  font-size: var(--op-font-medium); /* 16 px */
 }
 
-
-
-.game-view__game-feed
+.action-responses
 {
-  .feed-action
-  {
-    border-radius: var(--op-radius-x-large);
-    padding: var(--op-space-small);
-  }
+  padding-left: var(--op-space-small);
+  padding-right: var(--op-space-small);
+  font-weight: var(--op-font-weight-semi-bold);
+  font-size: var(--op-font-x-small); /* 12 px */
+}
 
-  .player-action
-  {
-    background-color: var(--op-color-primary-plus-five);
-    color: var(--op-color-primary-on-plus-five-alt);
-    font-size: var(--op-font-medium); /* 16 px */
-  }
-  
-  .action-responses
-  {
-    padding-left: var(--op-space-small);
-    padding-right: var(--op-space-small);
-    font-weight: var(--op-font-weight-semi-bold);
-    font-size: var(--op-font-x-small); /* 12 px */
-  }
+.feed-response
+{
+  height: var(--gf-height);
+}
 
-  .feed-response
-  {
-    height: var(--gf-height);
-  }
+.feed-response--unsuccess
+{
+  background-color: var(--op-color-alerts-warning-plus-seven);
+  border-color: var(--op-color-alerts-warning-plus-five);
+  color: var(--op-color-alerts-warning-on-plus-seven-alt);
+}
 
-  .feed-response--unsuccess
-  {
-    background-color: var(--op-color-alerts-warning-plus-seven);
-    border-color: var(--op-color-alerts-warning-plus-five);
-    color: var(--op-color-alerts-warning-on-plus-seven-alt);
-  }
-
-  .feed-response--result
-  {
-    background-color: var(--op-color-primary-plus-max);
-    border-color: var(--op-color-primary-on-plus-max-alt);
-  }
+.feed-response--result
+{
+  background-color: var(--op-color-primary-plus-max);
+  border-color: var(--op-color-primary-on-plus-max-alt);
 }
 
 
@@ -190,203 +56,6 @@ select
   padding: var(--op-space-small);
 }
 
-.game-view__game-board
-{
-  #players
-  {
-    padding-top: var(--op-space-2x-large);
-    padding-right: var(--op-space-3x-large);
-    padding-bottom: var(--op-space-4x-large);
-    padding-left: var(--op-space-3x-large);
-  }
-
-}
-
-.players h2
-{
-  font-size: var(--op-font-medium);
-  font-weight: var(--op-font-weight-semi-bold);
-}
-
-.accordion
-{
-  border-radius: var(--op-radius-medium);
-
-  .accordion__header
-  {
-    font-size: var(--op-font-medium);
-    font-weight: var(--op-font-weight-normal);
-  }
-
-  summary
-  {
-    /*height: var(--op-input-height-large);  */
-    padding-inline: var(--op-space-medium);
-    padding-block: var(--op-space-small);
-    
-    gap: var(--op-space-medium); 
-  }
-
-  .accordion__content
-  {
-    padding: var(--op-space-small) var(--op-space-medium); /* V, H*/      
-  }
-
-  .icon
-  {
-    border-radius: var(--op-radius-circle);
-  }
-
-  &[open]
-  {
-    .accordion__content, summary
-    {
-      border: var(--op-border-width) solid var(--op-color-primary-plus-four);
-    }
-
-    .accordion__content
-    {
-      background-color: var(--op-color-neutral-plus-eight);
-    }
-
-    summary
-    {
-      background-color: var(--op-color-primary-plus-eight);
-    }
-
-    .icon
-    {
-      background-color: var(--op-color-primary-plus-five);
-      border: var(--op-border-width) solid var(--op-color-primary-plus-three);
-    }
-  }
-
-  &:not([open]) {
-    .accordion__content, summary
-    {
-      border: var(--op-border-width) solid var(--op-color-border);
-    }
-  }
-  
-}
-
-
-.players__hand 
-{
-  .text-pair
-  {
-    gap: var(--op-space-2x-large);
-  } 
-}
-
-.cards-stacked>*:not(:first-child)
-{
-  &.playing-card--sm
-  {
-    margin-left: calc(var(--op-space-scale-unit)*-6);
-  }
-
-  &.playing-card--lg
-  {
-    margin-left: calc(var(--op-space-4x-large)*-1);
-  }
-  
-}
-
-
-.playing-card
-{
-  height: 100%;
-  aspect-ratio: 63.5 / 88.9;  /* official playing card */ 
-  box-shadow: var(--op-shadow-x-small);
-
-  &.playing-card--lg
-  {
-    height: calc(var(--op-size-unit)*38); /* 152 px */
-  }
-
-  &.playing-card--sm
-  {
-    height: calc(var(--op-size-unit)*30); /* 120px */
-  }
-
-  &.playing-card--hover:hover
-  {
-    margin-top: calc(var(--op-space-medium)*-1);
-  }
-}
-
-.panel
-{
-  background-color: var(--op-color-neutral-plus-max);
-  color: var(--op-color-neutral-on-plus-max);
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-flow: column;
-  
-  h2 {
-    margin: 0;
-    font-size: calc(var(--op-font-scale-unit) * 1.8); /* 18 px */
-    font-weight: var(--op-font-weight-semi-bold);
-  }
-
-  &.panel--primary
-  {
-    background-color: var(--op-color-primary-plus-eight);
-    color: var(--op-color-primary-on-plus-eight-alt);
-    
-    h2
-    {
-      font-size: calc(var(--op-font-scale-unit) * 1.4); /* 14 px */
-    }
-  }
-
-  &.panel--secondary
-  {
-    background-color: var(--op-color-secondary, var(--op-color-neutral-plus-eight));
-    color: var(--op-color-secondary-on, var(--op-color-primary-on-neutral-eight-alt));
-    
-    h2
-    {
-      font-size: calc(var(--op-font-scale-unit) * 1.4); /* 14 px */
-    }
-  }
-
-  &.panel--padded .panel__header
-  {
-    --op-navbar-height: calc(var(--op-size-unit)*15); /* 60 px */
-    min-height: var(--op-navbar-height);
-  }
-
-  .panel__header
-  {
-    border-top: var(--op-border-width) solid var(--op-color-border);
-    border-bottom: var(--op-border-width) solid var(--op-color-border);
-
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    min-height: calc(var(--op-size-unit)*10); /* 40 px */
-
-    padding-top: var(--op-space-small);
-    padding-bottom: var(--op-space-x-small);
-    padding-right: var(--op-space-medium);
-    padding-left: var(--op-space-medium);
-  }  
-
-  .panel__content
-  {
-    padding: var(--op-space-medium);
-    overflow: auto;
-    height: 100%;
-  }
-}
-
-.badge
-{
-  border: calc(var(--op-border-width)*4) solid var(--op-color-neutral-plus-max);
-}
 
 body
 {
@@ -402,4 +71,3 @@ body
 {
   gap: 0px;
 }
-

@@ -1,0 +1,30 @@
+/* Optics */
+@import '@rolemodel/optics';
+@import '@rolemodel/optics/dist/css/optics.css';
+
+/* Theme Customization */
+@import 'core/theme/student4-theme-core';
+
+/* Core Customization */
+/*
+@import 'core/base';
+@import 'core/layout';
+@import 'core/utilities';
+*/
+
+/* Optics Component Customization */
+@import 'components/optics-overrides/accordion';
+@import 'components/optics-overrides/badge';
+@import 'components/optics-overrides/page';
+@import 'components/optics-overrides/sidebar';
+
+/* Component */
+@import 'components/cards-stacked';
+@import 'components/game-view';
+@import 'components/panel';
+@import 'components/players';
+@import 'components/playing-card';
+
+
+/* General Styles */
+/* @import 'general/{general-name}'; */
