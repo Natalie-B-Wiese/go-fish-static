@@ -246,23 +246,41 @@
 
 .cards-stacked>*:not(:first-child)
 {
-  margin-left: -40px;
+  &.playing-card--sm
+  {
+    margin-left: calc(var(--op-space-scale-unit)*-6);
+  }
+
+  &.playing-card--lg
+  {
+    margin-left: calc(var(--op-space-4x-large)*-1);
+  }
+  
 }
 
-.accordion .cards-stacked, .game-view__books .cards-stacked
-{
-  height: calc(var(--op-size-unit)*30); /* 120px */
-}
 
-.game-view__hand .cards-stacked
+.playing-card
 {
-  height: calc(var(--op-size-unit)*38); /* 152 px */
+  &.playing-card--lg
+  {
+    height: calc(var(--op-size-unit)*38); /* 152 px */
+  }
+
+  &.playing-card--sm
+  {
+    height: calc(var(--op-size-unit)*30); /* 120px */
+  }
 }
 
 .playing-card {
   height: 100%;
   aspect-ratio: 63.5 / 88.9;  /* official playing card */ 
   box-shadow: var(--op-shadow-x-small);
+
+  &.playing-card--hover:hover
+  {
+    margin-top: calc(var(--op-space-medium)*-1);
+  }
 }
 
 
