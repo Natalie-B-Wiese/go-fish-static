@@ -220,10 +220,11 @@ select
 
   summary
   {
-    height: var(--op-input-height-large);     
-    padding-right: var(--op-space-medium);
-    padding-left: var(--op-space-2x-small);
-    gap: var(--op-space-x-large); 
+    /*height: var(--op-input-height-large);  */
+    padding-inline: var(--op-space-medium);
+    padding-block: var(--op-space-small);
+    
+    gap: var(--op-space-medium); 
   }
 
   .accordion__content
