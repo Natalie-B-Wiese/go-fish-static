@@ -26,15 +26,32 @@
   padding-top: var(--op-space-2x-large);
   padding-right: var(--op-space-large);
   padding-bottom: var(--op-space-2x-large);
-  
   padding-left: var(--op-space-large);
 
   background-color: var(--neutral-plus-eight);
   border-right: var(--op-border-width) solid var(--op-color-neutral-plus-four);
-  width: 216px;
+  width: calc(var(--op-size-unit) * 54); /* 216px */
+
+  .primary--nav
+  {
+    gap: var(--op-space-2x-large);
+  }
+
+  .btn
+  {
+    justify-content: left;
+    color: var(--op-color-neutral-on-plus-five);
+    font-size: var(--op-font-small);
+  }
+
+  .sidebar__link
+  {
+    text-decoration: none;
+    color: var(--op-color-neutral-on-plus-max);
+    font-size: var(--op-font-x-small);
+  }
 }
 
-/* TODO: when setting background color, also set text color!!! */
 .game-view
 {
   background-color: var(--op-color-neutral-plus-max);
@@ -53,8 +70,6 @@
     "cards books";
 }
 
-/* todo: game-board rename to game-view__game-board and do it with others too.
-Also don't use IDs!!! */
 .game-view__game-board  { grid-area: game-board; }
 .game-view__game-feed { grid-area: game-feed; }
 .game-view__hand    { grid-area: cards; }
@@ -223,8 +238,7 @@ Also don't use IDs!!! */
 
 .playing-card {
   height: 100%;
-  aspect-ratio: 63.5 / 88.9;  /* official playing care*/ 
-  /* box-shadow: 0px 1.08px 2.17px 0px var(--op-color-neutral-plus-two); */
+  aspect-ratio: 63.5 / 88.9;  /* official playing card */ 
   box-shadow: var(--op-shadow-x-small);
 }
 
@@ -297,7 +311,6 @@ Also don't use IDs!!! */
 
 }
 
-
 .badge
 {
   border: calc(var(--op-border-width)*4) solid var(--op-color-neutral-plus-max);
@@ -308,53 +321,7 @@ body
   overflow: hidden;
 }
 
-
 .feed-content
 {
   overflow: auto;
 }
-
-
-/*
-.sidebar.sidebar--padded {
-  padding: var(--op-space-large) var(--op-space-2x-large) var(--op-space-4x-large);
-
-  .content-header {    
-    padding-bottom: var(--op-space-2x-large);
-  }
-}
-
-.sidebar
-{
-  .sidebar__link
-  {
-    text-decoration: none;
-  }
-}
-
-.accordion
-{
-  .accordion__content
-  {
-    background-color: var(--op-color-neutral-on-minus-five);
-  }
-}
-
-#game-feed
-{
-  background-color: var(--op-color-primary-plus-five);
-  padding: 20px;
-}
-
-.accordion.accordion--padded>*
-{
-  padding: 20px;
-}
-
-.player-details
-{
-  display: flex;
-  gap: var(--op-space-4x-large);
-}
-
-*/
