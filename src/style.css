@@ -159,12 +159,20 @@
   }
 
   &[open]
-  { 
-    background-color: var(--op-color-primary-plus-eight);
-
+  {
     .accordion__content, summary
     {
       border: var(--op-border-width) solid var(--op-color-primary-plus-four);
+    }
+
+    .accordion__content
+    {
+      background-color: var(--op-color-neutral-plus-eight);
+    }
+
+    summary
+    {
+      background-color: var(--op-color-primary-plus-eight);
     }
 
     .icon
