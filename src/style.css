@@ -112,6 +112,19 @@ select
   .game-view__game-feed { 
     grid-area: game-feed;
     border-left: var(--op-border-width) solid var(--op-color-border);
+
+    .panel__content
+    {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+
+    .feed-content
+    {
+      padding-top: var(--op-space-medium);
+      padding-bottom: var(--op-space-medium);
+
+    }
   }
 
   .game-view__hand {
@@ -383,3 +396,9 @@ body
 {
   overflow: auto;
 }
+
+.gap-none
+{
+  gap: 0px;
+}
+
