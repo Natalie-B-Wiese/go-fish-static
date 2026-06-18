@@ -8,7 +8,7 @@
   --op-color-primary-s: 90%;
   --op-color-primary-l: 40%;
 
-  --op-color-alerts-warning-plus-seven: hsl(47, 100%, 8%);
+  --op-color-alerts-warning-plus-seven: hsl(284, 90%, 19%);
   --op-color-alerts-warning-on-plus-seven-alt: hsl(47, 100%, 60%);
 
   --op-radius-small: 0px;
@@ -58,7 +58,6 @@
   {
     .content-header__title
     {
-      /* overrwrites default styling in optics */
       font-size: var(--op-font-small);
       font-weight: var(--op-font-weight-semi-bold);
     }
@@ -67,6 +66,7 @@
 
 .card
 {
+  /* overrwrites default styling in optics */
   background-color: var(--op-color-neutral-plus-eight) !important;
 }
 
@@ -78,8 +78,6 @@
 
 .game-view
 {
-  
-
   height: 100vh;
   overflow: hidden;
   --gf-side-panel-width: calc(var(--op-size-unit) * 84); /* 336 pixels */
@@ -91,22 +89,31 @@
   grid-template-areas:
     "game-board game-feed"
     "cards books";
+
+  .game-view__game-board
+  {
+    grid-area: game-board;
+  }
+
+  .game-view__game-feed { 
+    grid-area: game-feed;
+    border-left: var(--op-border-width) solid var(--op-color-border);
+  }
+
+  .game-view__hand {
+    grid-area: cards; 
+  }
+
+  .game-view__books {
+    grid-area: books;
+    border-left: var(--op-border-width) solid var(--op-color-border);
+  }
 }
 
-.game-view__game-board  { grid-area: game-board; }
-.game-view__game-feed { grid-area: game-feed; }
-.game-view__hand    { grid-area: cards; }
-.game-view__books  { grid-area: books; }
 
-.game-view__books
-{
-  border-left: var(--op-border-width) solid var(--op-color-border);
-}
 
 .game-view__game-feed
 {
-  border-left: var(--op-border-width) solid var(--op-color-border);
-
   .feed-action
   {
     border-radius: var(--op-radius-x-large);
@@ -145,12 +152,6 @@
     background-color: var(--op-color-primary-plus-max);
     border-color: var(--op-color-primary-on-plus-max-alt);
   }
-}
-
-
-.game-view__hand .content-header, .game-view__books .content-header
-{
-  border: 1px solid var(--op-color-border);
 }
 
 
@@ -200,7 +201,6 @@
 
   .accordion__content
   {
-    /* TODO: padding-inline for H and padding-block for V */
     padding: var(--op-space-small) var(--op-space-medium); /* V, H*/      
   }
 
@@ -268,6 +268,10 @@
 
 .playing-card
 {
+  height: 100%;
+  aspect-ratio: 63.5 / 88.9;  /* official playing card */ 
+  box-shadow: var(--op-shadow-x-small);
+
   &.playing-card--lg
   {
     height: calc(var(--op-size-unit)*38); /* 152 px */
@@ -277,12 +281,6 @@
   {
     height: calc(var(--op-size-unit)*30); /* 120px */
   }
-}
-
-.playing-card {
-  height: 100%;
-  aspect-ratio: 63.5 / 88.9;  /* official playing card */ 
-  box-shadow: var(--op-shadow-x-small);
 
   &.playing-card--hover:hover
   {
@@ -290,8 +288,6 @@
   }
 }
 
-
-/* start of new stuff */
 .panel
 {
   background-color: var(--op-color-neutral-plus-max);
@@ -356,7 +352,6 @@
     overflow: auto;
     height: 100%;
   }
-
 }
 
 .badge
