@@ -65,11 +65,20 @@
   }
 }
 
+.card
+{
+  background-color: var(--op-color-neutral-plus-eight) !important;
+}
 
-.game-view
+.game-view, .op-page
 {
   background-color: var(--op-color-neutral-plus-max);
   color: var(--op-color-neutral-on-plus-max);
+}
+
+.game-view
+{
+  
 
   height: 100vh;
   overflow: hidden;
