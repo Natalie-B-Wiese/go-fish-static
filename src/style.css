@@ -355,7 +355,7 @@ select
   &.panel--padded .panel__header
   {
     --op-navbar-height: calc(var(--op-size-unit)*15); /* 60 px */
-    height: var(--op-navbar-height);
+    min-height: var(--op-navbar-height);
   }
 
   .panel__header
@@ -366,7 +366,7 @@ select
     display: flex;
     flex-flow: row;
     align-items: center;
-    height: calc(var(--op-size-unit)*10); /* 40 px */
+    min-height: calc(var(--op-size-unit)*10); /* 40 px */
 
     padding-top: var(--op-space-small);
     padding-bottom: var(--op-space-x-small);
