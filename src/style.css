@@ -236,6 +236,8 @@ Also don't use IDs!!! */
   color: var(--op-color-neutral-on-plus-max);
   height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-flow: column;
   
   h2 {
     margin: 0;
