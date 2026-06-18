@@ -98,8 +98,15 @@
 .game-view__hand    { grid-area: cards; }
 .game-view__books  { grid-area: books; }
 
+.game-view__books
+{
+  border-left: var(--op-border-width) solid var(--op-color-border);
+}
+
 .game-view__game-feed
 {
+  border-left: var(--op-border-width) solid var(--op-color-border);
+
   .feed-action
   {
     border-radius: var(--op-radius-x-large);
