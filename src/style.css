@@ -69,12 +69,15 @@
   {
     background-color: var(--op-color-primary-plus-five);
     color: var(--op-color-primary-on-plus-five-alt);
+    font-size: var(--op-font-medium); /* 16 px */
   }
   
   .action-responses
   {
     padding-left: var(--op-space-small);
     padding-right: var(--op-space-small);
+    font-weight: var(--op-font-weight-semi-bold);
+    font-size: var(--op-font-x-small); /* 12 px */
   }
 
   .feed-response
