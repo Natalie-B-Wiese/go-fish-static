@@ -41,6 +41,7 @@
   color: var(--op-color-neutral-on-plus-max);
 
   height: 100vh;
+  overflow: hidden;
   --gf-side-panel-width: calc(var(--op-size-unit) * 84); /* 336 pixels */
   --gf-side-panel-height: calc(var(--op-size-unit) * 64); /* 256 pixels */
 
@@ -52,6 +53,8 @@
     "cards books";
 }
 
+/* todo: game-board rename to game-view__game-board and do it with others too.
+Also don't use IDs!!! */
 #game-board  { grid-area: game-board; }
 .game-feed { grid-area: game-feed; }
 .hand    { grid-area: cards; }
@@ -231,6 +234,8 @@
 {
   background-color: var(--op-color-neutral-plus-max);
   color: var(--op-color-neutral-on-plus-max);
+  height: 100%;
+  overflow: hidden;
   
   h2 {
     margin: 0;
@@ -284,6 +289,8 @@
   .panel__content
   {
     padding: var(--op-space-medium);
+    overflow: auto;
+    height: 100%;
   }
 
 }
@@ -292,6 +299,17 @@
 .badge
 {
   border: calc(var(--op-border-width)*4) solid var(--op-color-neutral-plus-max);
+}
+
+body
+{
+  overflow: hidden;
+}
+
+
+.feed-content
+{
+  overflow: auto;
 }
 
 
