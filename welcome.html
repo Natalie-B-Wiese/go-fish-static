@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Go Fish Static</title>
+  </head>
+  <body>
+    <main>
+        <img src="img/fish.svg">
+        <img src="img/fish.svg">
+        <img src="img/fish.svg">
+        <img src="img/fish.svg">
+        <img src="img/fish.svg">
+        <img src="img/fish.svg">
+        <img src="img/fish.svg">
+        <img src="img/fish.svg">
+        <img src="img/fish.svg">
+        <img src="img/fish.svg">
+        
+    </main>
+    
+  </body>
+</html>
+
+<script>
+    const fishes=document.querySelectorAll('img');
+    fishes.forEach((fish) => {
+        fish.addEventListener("mouseover", (event) => {
+            randomizePosition(fish);
+        });
+
+        
+    });
+
+    function randomizePosition(element)
+    {
+        // Perform actions on each item here
+        // 2. Change position type from the default 'static'
+        element.style.position = "absolute"; 
+
+        // 3. Define the coordinates (always include units like 'px')
+        // Calculate maximum allowed positions to keep the element on screen
+        const maxX = window.innerWidth - element.clientWidth;
+        const maxY = window.innerHeight - element.clientHeight;
+        
+        // Generate random coordinates
+        const randomX = Math.floor(Math.random() * maxX);
+        const randomY = Math.floor(Math.random() * maxY);
+        
+        // Apply positions using CSS styles
+        element.style.left = randomX + "px";
+        element.style.top = randomY + "px";
+    }
+
+</script>
