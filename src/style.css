@@ -10,6 +10,14 @@
 
   --op-color-alerts-warning-plus-seven: hsl(47, 100%, 8%);
   --op-color-alerts-warning-on-plus-seven-alt: hsl(47, 100%, 60%);
+
+  --op-radius-small: 0px;
+  --op-radius-medium: 0px;
+  --op-radius-large: 0px;
+  --op-radius-x-large: 0px;
+  --op-radius-2x-large: 0px;
+  --op-radius-circle: 0px;
+  --op-radius-pill: 0px;
 }
 /* End of theme styling */
 
