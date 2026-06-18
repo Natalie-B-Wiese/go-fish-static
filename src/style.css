@@ -7,6 +7,9 @@
   --op-color-primary-h: 284;
   --op-color-primary-s: 90%;
   --op-color-primary-l: 40%;
+
+  --op-color-alerts-warning-plus-seven: hsl(47, 100%, 8%);
+  --op-color-alerts-warning-on-plus-seven-alt: hsl(47, 100%, 60%);
 }
 /* End of theme styling */
 
@@ -75,7 +78,7 @@
   {
     background-color: var(--op-color-alerts-warning-plus-seven);
     border-color: var(--op-color-alerts-warning-plus-five);
-    color: var(--op-color-alerts-warning-on-plus-five-alt);
+    color: var(--op-color-alerts-warning-on-plus-seven-alt);
   }
 
   .feed-response--result
