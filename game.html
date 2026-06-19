@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="stylesheet" href="/stylesheets/application.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
     <title>Go Fish Static</title>
   </head>
   <body>
@@ -14,7 +25,7 @@
       <div class="panel panel--padded game-view__game-board">
         <header class="panel__header gap-xs">
           <button class="btn btn--no-border btn--icon btn--small">
-            <span class="material-symbols-outlined icon--small">arrow_back</span>
+            <i class="ph ph-caret-left icon icon--large"></i>
           </button>
           <h2>Game 1</h2>
         </header>
@@ -25,7 +36,9 @@
           <div class="players__hand op-stack gap-xs">
             <details class="accordion">
               <summary>
-                <span class="material-symbols-outlined icon accordion__marker">arrow_right</span>
+                <div class="accordion__marker">
+                  <i class="ph ph-caret-right icon icon--small"></i>
+                </div>
                 <span class="accordion__header">Gabe</span>
                 <div class="text-pair text-pair--inline">
                   <div>Cards: <span><strong>7</strong></span></div>
@@ -51,7 +64,9 @@
 
             <details class="accordion">
               <summary>
-                <span class="material-symbols-outlined icon accordion__marker">arrow_right</span>
+                <div class="accordion__marker">
+                  <i class="ph ph-caret-right icon icon--small"></i>
+                </div>
                 <span class="accordion__header">Gabe</span>
                 <div class="text-pair text-pair--inline">
                   <div>Cards: <span><strong>7</strong></span></div>
@@ -77,7 +92,9 @@
 
             <details class="accordion">
               <summary>
-                <span class="material-symbols-outlined icon accordion__marker">arrow_right</span>
+                <div class="accordion__marker">
+                  <i class="ph ph-caret-right icon icon--small"></i>
+                </div>
                 <span class="accordion__header">Gabe</span>
                 <div class="text-pair text-pair--inline">
                   <div>Cards: <span><strong>7</strong></span></div>
@@ -123,14 +140,15 @@
             </div>
 
             <div class="feed-bubble feed-bubble--response feed-bubble--unsuccess">
-              <span class="material-symbols-outlined">subdirectory_arrow_right</span>
+              <i class="ph ph-arrow-bend-down-right"></i>
               <div class="feed-bubble__content">
                 Go Fish: Natalie doesn't have any 8s
               </div>
             </div>
 
             <div class="feed-bubble feed-bubble--response">
-              <span class="material-symbols-outlined">subdirectory_arrow_right</span>
+              <i class="ph ph-arrow-bend-down-right"></i>
+              
               <div class="feed-bubble__content">
                 You drew a 7 of Diamonds.
               </div>
