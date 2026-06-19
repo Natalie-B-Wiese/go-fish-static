@@ -1,6 +1,5 @@
 /* Optics */
-@import '@rolemodel/optics';
-@import '@rolemodel/optics/dist/css/optics.css';
+@import '@rolemodel/optics/dist/css/optics+phosphor_icons';
 
 /* Theme Customization */
 @import 'core/theme/student4-theme-core';
@@ -16,7 +15,6 @@
 @import 'components/optics-overrides/accordion';
 @import 'components/optics-overrides/badge';
 @import 'components/optics-overrides/page';
-@import 'components/optics-overrides/sidebar';
 
 /* Component */
 @import 'components/cards-stacked';

@@ -1,12 +1,5 @@
 @import '@rolemodel/optics/dist/css/optics.css';
 
-
-.card
-{
-  /* overrwrites default styling in optics */
-  background-color: var(--op-color-neutral-plus-eight) !important;
-}
-
 .feed-content
 {
   overflow: auto;

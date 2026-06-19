@@ -11,9 +11,6 @@
   --op-color-alerts-warning-plus-seven: hsl(var(--op-color-primary-h), 90%, 19%);
   --op-color-alerts-warning-on-plus-seven-alt: hsl(47, 100%, 60%);
 
-  --op-color-neutral-plus-eight: hsl(284, 40%, 90%);
-  --op-color-primary-on-neutral-eight-alt: hsl(287, 11%, 16%);
-
   --op-color-secondary: hsl(282, 47%, 17%);
   --op-color-secondary-on: hsl(287, 30%, 72%);
 

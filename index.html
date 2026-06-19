@@ -6,56 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="stylesheet" href="/stylesheets/application.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
     <title>Go Fish Static</title>
   </head>
   <body class="op-page">
+    
 
     <div class="op-page__sidebar">
-      <div class="op-stack gap-xl">
-        <nav class="primary--nav flex-grow-1 op-stack">
-          <header class="content-header">
-            <div class="content-header__details">
-              <img src="img/fish.svg">
-              <h2 class="content-header__title">Go Fish</h2>
-            </div>          
-          </header>
+      <nav class="sidebar sidebar--drawer sidebar--padded sidebar--primary">
         
-          <div class="sidebar__content sidebar__content--start">
-            <div class="op-stack gap-xxs">
-              <button class="btn btn--no-border btn--active">
-                <i class="ph ph-puzzle-piece"></i>
-                Games
-              </button>
+        <a class="sidebar__brand" href="/">
+          <h2 class="content-header__title">Go Fish</h2>
+        </a>
+      
+        <div class="sidebar__content sidebar__content--start">
+          <button class="btn btn--no-border btn--active">
+            <i class="ph ph-puzzle-piece"></i>
+            Games
+          </button>
 
-              <button class="btn btn--no-border">
-                <i class="ph ph-ranking"></i>
-                Stats
-              </button>
-            </div>
-          </div>
-        </nav>
+          <button class="btn btn--no-border">
+            <i class="ph ph-ranking"></i>
+            Stats
+          </button>
+        </div>
 
+        <div class="sidebar__content sidebar__content--end">
+          <div class="divider"></div>
+          <button class="btn btn--no-border">
+            Profile
+          </button>
 
-        <nav class="secondary--nav">
-          <div class="sidebar__content sidebar__content--end">
-            <div class="flex flex-col gap-xl">
-              <div class="divider"></div>
-              <a href="" class="sidebar__link">Profile</a>
-              <a href="" class="sidebar__link">Log Out</a>
-            </div>
-          </div>
-        </nav>
-      </div>
+          <button class="btn btn--no-border">
+            Log Out
+          </button>
+          
+        </div>    
+      </nav>
 
     </div>
 
