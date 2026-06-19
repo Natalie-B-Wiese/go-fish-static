@@ -8,7 +8,7 @@
     
     &.feed-bubble--action
     {
-        margin-bottom: var(--op-space-2x-small, 100px);
+        margin-bottom: var(--op-space-2x-small);
 
         .feed-bubble__content
         {
