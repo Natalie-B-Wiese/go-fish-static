@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/stylesheets/application.css" />
+    <title>Go Fish Static</title>
+  </head>
+  <body>
+    <main class="history-view">
+
+      <div class="history-view__games panel panel--padded">
+        <header class="panel__header gap-xs">
+          <button class="btn btn--no-border btn--icon btn--small">
+            <i class="ph ph-caret-left icon icon--large"></i>
+          </button>
+          <h2>History</h2>
+        </header>
+
+        <div class="panel__content op-stack gap-xs">
+          <h3>History</h3>
+
+          <div class="op-stack gap-xs">
+            <details class="accordion" name="game-accordion">
+              <summary>
+                <div class="accordion__marker">
+                  <i class="ph ph-caret-right icon icon--small"></i>
+                </div>
+                <span class="accordion__header">Game 1</span>
+                <div class="text-pair text-pair--inline">
+                  <div>Players: <span><strong>6</strong></span></div>
+                  <div>Winner: <span><strong>Gabe</strong></span></div>
+                </div>
+              </summary>
+              <div class="accordion__content">
+                <div class="flex flex-row flex-no-wrap justify-between">
+                  <div>
+                    <p>Players: Gabe, Gabe, Gabe</p>
+                    <p>Winner: Gabe</p>
+                  </div>
+                  <div>
+                    <p>Date started: March 3, 2026</p>
+                    <p>Date ended: March 9, 2026</p>
+                  </div>
+                </div>
+                
+              </div>
+            </details>
+
+            <details class="accordion" name="game-accordion">
+              <summary>
+                <div class="accordion__marker">
+                  <i class="ph ph-caret-right icon icon--small"></i>
+                </div>
+                <span class="accordion__header">Game 1</span>
+                <div class="text-pair text-pair--inline">
+                  <div>Players: <span><strong>6</strong></span></div>
+                  <div>Winner: <span><strong>Gabe</strong></span></div>
+                </div>
+              </summary>
+              <div class="accordion__content">
+                <div class="flex flex-row flex-no-wrap justify-between">
+                  <div>
+                    <p>Players: Gabe, Gabe, Gabe</p>
+                    <p>Winner: Gabe</p>
+                  </div>
+                  <div>
+                    <p>Date started: March 3, 2026</p>
+                    <p>Date ended: March 9, 2026</p>
+                  </div>
+                </div>
+                
+              </div>
+            </details>
+
+            <details class="accordion" name="game-accordion">
+              <summary>
+                <div class="accordion__marker">
+                  <i class="ph ph-caret-right icon icon--small"></i>
+                </div>
+                <span class="accordion__header">Game 1</span>
+                <div class="text-pair text-pair--inline">
+                  <div>Players: <span><strong>6</strong></span></div>
+                  <div>Winner: <span><strong>Gabe</strong></span></div>
+                </div>
+              </summary>
+              <div class="accordion__content">
+                <div class="flex flex-row flex-no-wrap justify-between">
+                  <div>
+                    <p>Players: Gabe, Gabe, Gabe</p>
+                    <p>Winner: Gabe</p>
+                  </div>
+                  <div>
+                    <p>Date started: March 3, 2026</p>
+                    <p>Date ended: March 9, 2026</p>
+                  </div>
+                </div>
+                
+              </div>
+            </details>
+
+           
+          </div>
+        </div>
+
+      </div>
+
+      <div class="history-view__game-feed panel panel--padded panel--primary">
+        <header class="panel__header">
+          <h2>Game Feed</h2>
+        </header>
+        
+         
+        <div class="panel__content flex-grow-1">
+          <div class="feed-content op-stack gap-xs">
+            <p>Open a game to see its feed.</p>
+
+            <div class="feed-bubble feed-bubble--action">
+              <div class="feed-bubble__content">
+                Joby asked <strong>Natalie</strong> for any <strong>8</strong>s
+              </div>
+            </div>
+
+            <div class="feed-bubble feed-bubble--response feed-bubble--unsuccess">
+              <i class="ph ph-arrow-bend-down-right icon icon--medium"></i>
+              <div class="feed-bubble__content">
+                Go Fish: Natalie doesn't have any 8s
+              </div>
+            </div>
+
+            <div class="feed-bubble feed-bubble--response">
+              <i class="ph ph-arrow-bend-down-right icon icon--medium"></i>
+              
+              <div class="feed-bubble__content">
+                You drew a 7 of Diamonds.
+              </div>
+            </div>
+
+            <div class="feed-bubble feed-bubble--action">
+              <div class="feed-bubble__content">
+                Joby asked <strong>Natalie</strong> for any <strong>8</strong>s
+              </div>
+            </div>
+
+            <div class="feed-bubble feed-bubble--response feed-bubble--unsuccess">
+              <i class="ph ph-arrow-bend-down-right icon icon--medium"></i>
+              <div class="feed-bubble__content">
+                Go Fish: Natalie doesn't have any 8s
+              </div>
+            </div>
+
+            <div class="feed-bubble feed-bubble--response">
+              <i class="ph ph-arrow-bend-down-right icon icon--medium"></i>
+              
+              <div class="feed-bubble__content">
+                You drew a 7 of Diamonds.
+              </div>
+            </div>
+            
+          </div>
+
+          
+        </div>
+
+
+      </div>
+      
+
+    </main>
+    
+  </body>
+</html>

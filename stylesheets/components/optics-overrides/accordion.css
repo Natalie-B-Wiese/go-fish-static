@@ -16,6 +16,11 @@
     padding-block: var(--op-space-small);
     
     gap: var(--op-space-medium); 
+
+    .text-pair
+    {
+      gap: var(--op-space-2x-large);
+    }
   }
 
   .accordion__content

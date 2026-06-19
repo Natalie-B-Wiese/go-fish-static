@@ -10,13 +10,4 @@
     font-size: var(--op-font-medium);
     font-weight: var(--op-font-weight-semi-bold);
   }
-
-  .players__hand 
-  {
-    .text-pair
-    {
-      gap: var(--op-space-2x-large);
-    } 
-  }
-
 }

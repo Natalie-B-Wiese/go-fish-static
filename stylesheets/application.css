@@ -20,6 +20,8 @@
 @import 'components/cards-stacked';
 @import 'components/feed-bubble';
 @import 'components/game-view';
+@import 'components/history-view';
+
 @import 'components/panel';
 @import 'components/players';
 @import 'components/playing-card';
