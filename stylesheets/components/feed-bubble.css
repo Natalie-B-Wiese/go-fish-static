@@ -32,7 +32,10 @@
 
             background-color: var(--op-color-primary-plus-max);
             color: var(--op-color-primary-on-plus-max);
-            border-color: var(--op-color-primary-on-plus-max-alt);
+
+            border-width: var(--op-border-width);
+            border-color: var(--op-color-primary-plus-seven);
+            border-style: solid;
 
             font-weight: var(--op-font-weight-semi-bold);
             font-size: var(--op-font-x-small); /* 12 px */
