@@ -13,6 +13,7 @@
 
 /* Optics Component Customization */
 @import 'components/optics-overrides/accordion';
+@import 'components/optics-overrides/avatar';
 @import 'components/optics-overrides/badge';
 @import 'components/optics-overrides/page';
 
